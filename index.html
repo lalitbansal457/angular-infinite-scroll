@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Infinite Scroll</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="angular.min.js"></script>
+		<script src="controller.js"></script>
+		<style type="text/css">
+			li {
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="iScrollCtrl">
+			<ul scroll="loadMore()">
+				<li ng-repeat="x in arr | iScroll: currentPage  | limitTo : limitScroll" >{{x}}</li>
+			</ul>
+		</div>
+	</body>
+</html>
