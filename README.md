@@ -1,5 +1,5 @@
 # angular-infinite-scroll
-###This is for creating infinite scrolling using angular
+### This is for creating infinite scrolling using angular
 
 
 
